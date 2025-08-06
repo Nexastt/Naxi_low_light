@@ -55,13 +55,13 @@ if uploaded_file is not None:
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        st.image(image, caption="Original", use_column_width=True)
+        st.image(image, caption="Original", use_container_width=True)
 
     with col2:
-        st.image(autocontrast_image, caption="Autocontrast", use_column_width=True)
+        st.image(autocontrast_image, caption="Autocontrast", use_container_width=True)
 
     with col3:
-        st.image(enhanced_image, caption="NaxiLowLight Enhanced", use_column_width=True)
+        st.image(enhanced_image, caption="NaxiLowLight Enhanced", use_container_width=True)
 
     # Download
     buf = io.BytesIO()
